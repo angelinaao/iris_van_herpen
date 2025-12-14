@@ -1,0 +1,294 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    overflow-x: hidden;
+    
+    background-color: #ffffff;
+}
+body{
+       height: 106vh;
+}
+.text-item {
+    font-size: 0.75rem;
+    margin-bottom: 0; 
+    color: rgb(0, 0, 0);
+}
+.content-wrapper{
+    z-index: 100;
+}
+.text-item:hover {
+    font-weight: bold; /* Make text bold on hover */
+    cursor: pointer;
+}
+.left-column .text-item:nth-child(2) {
+    margin-top: 5.47rem; /* Targets the 2nd item (1B) */
+}
+.middle-column .text-item:nth-child(2) {
+    margin-top: 5.47rem; /* Targets the 2nd item (1B) */
+}
+.middle-column .text-item:nth-child(3) {
+    margin-top: 10.94rem; /* Targets the 2nd item (1B) */
+}
+.middle-column .text-item:nth-child(4) {
+    margin-top: 7.57rem; /* Targets the 2nd item (1B) */
+}
+.lower-middle-column .text-item:nth-child(1) {
+    margin-top: 2.04rem; /* Targets the 2nd item (1B) */
+}
+.lower-middle-column .text-item:nth-child(2) {
+    margin-top: 13.04rem; /* Targets the 2nd item (1B) */
+}
+.center-column .text-item:nth-child(1) {
+    margin-top: 0.58rem; /* Targets the 2nd item (1B) */
+}
+.far-right-column .text-item:nth-child(1) {
+    margin-top: 6.04rem; /* Targets the 2nd item (1B) */
+}
+.right-column .text-item:nth-child(2) {
+    margin-top: 6.04rem; /* Targets the 2nd item (1B) */
+}
+.content-wrapper {
+    position: relative;
+    height: 106vh;
+    padding-top: 0;
+    font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:100;
+}
+.left-column {
+    position: absolute;
+    left: 3rem;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+/* Middle column (Dissection) - 4 columns horizontal */
+.middle-column {
+    position: absolute;
+    left: 23.3%;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+}
+
+/* Lower middle column (Carbon Footprint) - 2 columns horizontal */
+.lower-middle-column {
+    position: absolute;
+    left: 42.9%;
+    top: 58.75vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+/* Center column (Material Afterlife) - single item */
+.center-column {
+    position: absolute;
+    left:66.4%;
+    top: 51.5vh;
+    transform: translateX(-50%);
+}
+
+/* Right column (Innovation) - 2 columns horizontal */
+.right-column {
+    position: absolute;
+    right: 4.5%;
+    top: 73vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+.right-column .text-item:nth-child(1) {
+  font-weight: bold;
+}
+
+
+
+
+.image img{
+height: 110.7vh;
+width: auto;
+right: 0vw;
+position: fixed;
+z-index: 10;
+    top: 10.5vh;
+   
+}
+
+
+.head{
+       padding-bottom: 2.3vh;
+    font-size: 0.6rem;
+}
+.heading{
+       padding-bottom: 2.3vh; 
+}
+.par-one{
+    padding-bottom: 2.3vh; 
+}
+.par-one-two{
+     padding-bottom: 2.3vh; 
+}
+
+.title{
+    color: rgb(0, 0, 0);
+    font-family: "Spline Sans Mono", monospace;
+font-weight: 600;
+font-style: normal;
+     font-size: 16vh;
+     line-height: 0.88;
+   margin-left: -1vw;
+   width: 100vw;
+
+   
+ 
+
+}
+.subheading{
+    padding-bottom: 1vh;
+    font-size: 0.8rem;
+    
+}
+
+.par-one{
+    padding-bottom: 2.3vh; 
+
+}
+
+.par-one-two{
+    padding-bottom: 2.3vh; 
+  
+}
+.container{
+    color: rgb(0, 0, 0);
+    font-size: 0.57rem;
+     font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:300;
+    width: 17vw;
+    padding-left: 3vw;
+    padding-bottom: 3vw;
+     position: fixed;
+     top: 12vh;   /* adjust */
+       right: 2rem; /* adjust */
+}
+.animated-text-container {
+    position: fixed;
+    top: 40.3vh;
+    right: 8vw;
+    width: 60vw;
+    height: 7.5rem;
+    overflow: visible;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.animated-text-line {
+    font-family: "Spline Sans Mono", monospace;
+    font-size: 0.57rem;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: none;
+    position: absolute;
+}
+
+.animated-text-line:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+
+.animated-text-line:nth-child(2) {
+    left: 5vw;
+    top: 0.5rem;
+}
+.animated-text-line:nth-child(3) {
+    left: 15vw;
+    top: 1.9rem;
+}
+.animated-text-line:nth-child(4) {
+    left: 23vw;
+    top: 2.5rem;
+}
+
+.animated-text-line:nth-child(5) {
+    left: 30vw;
+    top: 3.8rem;
+    opacity: 0.3;  
+}
+
+.animated-text-line.visible {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.8s ease-out;
+}
+
+.animated-text-line:first-child {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.title {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.title:hover {
+    opacity: 0.8;
+}
+.animated-text-line:nth-child(1).visible,
+.animated-text-line:nth-child(1) {
+    opacity: 1;
+}
+
+.animated-text-line:nth-child(2).visible {
+    opacity: 0.9;
+}
+
+.animated-text-line:nth-child(3).visible {
+    opacity: 0.7;
+}
+
+.animated-text-line:nth-child(4).visible {
+    opacity: 0.4;
+}
+
+.animated-text-line:nth-child(5).visible {
+    opacity: 0.2;
+}
+a{
+    text-decoration: none;
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-bottom: 8rem;
+    position: sticky;
+    top: 4vh;
+    z-index: 10;
+}
+.number {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+    font-weight: 50;
+        opacity: 60%;
+}
+
+.label {
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    font-weight: 50;
+    opacity: 60%;
+    
+}

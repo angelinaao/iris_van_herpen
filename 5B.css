@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+    
+    background-color: #000000;
+}
+.text-item {
+    font-size: 0.75rem;
+    margin-bottom: 0; 
+    color: white;
+    z-index: 99999;
+}
+.text-item:hover {
+    font-weight: bold; /* Make text bold on hover */
+    cursor: pointer;
+}
+.left-column .text-item:nth-child(2) {
+    margin-top: 5.47rem; /* Targets the 2nd item (1B) */
+}
+.middle-column .text-item:nth-child(2) {
+    margin-top: 5.47rem; /* Targets the 2nd item (1B) */
+}
+.middle-column .text-item:nth-child(3) {
+    margin-top: 10.94rem; /* Targets the 2nd item (1B) */
+}
+.middle-column .text-item:nth-child(4) {
+    margin-top: 7.57rem; /* Targets the 2nd item (1B) */
+}
+.lower-middle-column .text-item:nth-child(1) {
+    margin-top: 2.04rem; /* Targets the 2nd item (1B) */
+}
+.lower-middle-column .text-item:nth-child(2) {
+    margin-top: 13.04rem; /* Targets the 2nd item (1B) */
+}
+.center-column .text-item:nth-child(1) {
+    margin-top: 0.58rem; /* Targets the 2nd item (1B) */
+}
+.far-right-column .text-item:nth-child(1) {
+    margin-top: 6.04rem; /* Targets the 2nd item (1B) */
+}
+.right-column .text-item:nth-child(2) {
+    margin-top: 6.04rem; /* Targets the 2nd item (1B) */
+}
+.content-wrapper {
+    position: relative;
+    height: 106vh;
+    padding-top: 0;
+    font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+font-weight: 100;
+    text-decoration: none;
+}
+
+.right-column .text-item:nth-child(2) {
+  font-weight: bold;
+}
+.left-column {
+    position: absolute;
+    left: 3rem;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+/* Middle column (Dissection) - 4 columns horizontal */
+.middle-column {
+    position: absolute;
+    left: 23.3%;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+}
+
+/* Lower middle column (Carbon Footprint) - 2 columns horizontal */
+.lower-middle-column {
+    position: absolute;
+    left: 42.9%;
+    top: 58.75vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+/* Center column (Material Afterlife) - single item */
+.center-column {
+    position: absolute;
+    left:66.4%;
+    top: 51.5vh;
+    transform: translateX(-50%);
+}
+
+/* Right column (Innovation) - 2 columns horizontal */
+.right-column {
+    position: absolute;
+    right: 4.5%;
+    top: 73vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+.image_one img{
+height: 45vh;
+width: auto;
+padding-right: 4vw;
+
+}
+.image_one {
+    position: absolute;
+    right: 57rem; /* adjust */
+    top: 27vh;   /* adjust */
+}
+.image_two img{
+height: 45vh;
+width: auto;
+padding-right: 0vw;
+}
+.image_two {
+    position: absolute;
+    right: 24rem; /* adjust */
+    top: 27vh;   /* adjust */
+}
+.image_four img{
+height: 13vh;
+width: auto;
+padding-right: 1vw;
+z-index: 999;
+}
+.image_four {
+    position: absolute;
+    right: 49rem; /* adjust */
+    top: 27vh;   /* adjust */
+}
+
+.container{
+    color: white;
+    font-size: 0.57rem;
+     font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:100;
+    width: 22vw;
+    padding-left: 0vw;
+    padding-bottom: 3vw;
+     position: absolute;
+     top: 27vh;   /* adjust */
+       right: 2rem; /* adjust */
+}
+.subheading{
+    padding-bottom: 2.3vh;
+        
+}
+.heading{
+       padding-bottom: 2.3vh; 
+           font-size: 0.8rem;
+            font-style: normal;
+    font-weight:400;
+          
+}
+.par-one{
+    padding-bottom: 2.3vh; 
+}
+.par-two{
+     padding-bottom: 2.3vh; 
+}
+
+.title-one{
+    color: white;
+     font-family: "american-scribe", sans-serif;
+font-weight: 400;
+font-style: normal;
+     font-size: 38vh;
+     line-height: 0.88;
+   margin-left: -3vw;
+  
+
+}
+.title-two{
+    color: white;
+     font-family: "american-scribe", sans-serif;
+font-weight: 400;
+font-style: normal;
+     font-size: 38vh;
+     line-height: 0.88;
+
+
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-bottom: 8rem;
+    position: fixed;
+    top: 4vh;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #000000;
+}
+.number {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+    font-weight: 50;
+        opacity: 60%;
+}
+
+.label {
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    font-weight: 50;
+    opacity: 60%;
+    
+}
+a{
+    text-decoration: none;
+}

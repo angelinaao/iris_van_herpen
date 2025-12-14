@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://use.typekit.net/xyu2aam.css">
+    <title>Fashion Collections</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+          font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:100;
+            background-color: #f5f5f5;
+            padding: 20px 40px;
+        }
+
+        .collection {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .collection-header {
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            padding: 5px 0;
+            display: inline-block;
+        }
+
+        .collection-name {
+            font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight:600;
+        }
+
+        .collection-year {
+            font-weight: normal;
+        }
+
+        .collection-images {
+            display: none;
+            margin-top: 5px;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            padding: 10px 0;
+        }
+
+        .collection-images.visible {
+            display: block;
+        }
+
+        .collection-images img {
+            height: 190px;
+            width: auto;
+            display: inline-block;
+            margin-right: 2px;
+            vertical-align: top;
+        }
+
+        /* Specific heights for different collections */
+        .sympoiesis .collection-images img {
+            height: 130px;
+        }
+
+        .hybrid .collection-images img {
+            height: 130px;
+        }
+
+        .architectonics .collection-images img {
+            height: 130px;
+        }
+
+        .carte-blanche .collection-images img {
+            height: 130px;
+        }
+
+        .meta-morphism .collection-images img {
+            height: 130px;
+        }
+
+        .earthrise .collection-images img {
+            height: 130px;
+        }
+
+        .roots-of-rebirth .collection-images img {
+            height: 130px;
+        }
+
+        .sensory-seas .collection-images img {
+            height: 130px;
+            width: auto;
+        }
+
+        .hypnosis .collection-images img {
+            height: 130px;
+        }
+
+        .shift-souls .collection-images img {
+            height: 130px;
+        }
+
+        .syntopia .collection-images img {
+            height: 130px;
+        }
+
+        .ludi-naturale .collection-images img {
+            height: 130px;
+        }
+
+        .aeriform .collection-images img {
+            height: 130px;
+        }
+
+        .between-the-lines .collection-images img {
+            height: 130px;
+        }
+
+        .seijaku .collection-images img {
+            height: 130px;
+        }
+
+        .lucid .collection-images img {
+            height: 130px;
+        }
+
+        /* Hide scrollbar but keep functionality */
+        .collection-images::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .collection-images::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .collection-images::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 3px;
+        }
+        .title-one{
+    color: rgb(6, 0, 0);
+     font-family: "american-scribe", sans-serif;
+font-weight: 400;
+font-style: normal;
+     font-size: 38vh;
+     line-height: 0.88;
+   margin-left: -6vw;
+   text-decoration: none;
+  
+
+}
+     .title-two{
+    color: rgb(6, 0, 0);
+     font-family: "american-scribe", sans-serif;
+font-weight: 400;
+font-style: normal;
+     font-size: 38vh;
+     line-height: 0.88;
+        margin-left: -2.2vw;
+
+  
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.title-one:hover{
+opacity: 0.5;
+}
+    </style>
+</head>
+<body>
+    <div class="collection sympoiesis">
+        <div class="collection-header">
+            <span class="collection-name">SYMPOIESIS</span>
+            <span class="collection-year">AW25</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_1.png" alt="Look 1">
+    
+        </div>
+    </div>
+
+    <div class="collection hybrid">
+        <div class="collection-header">
+            <span class="collection-name">HYBRID SHOW</span>
+            <span class="collection-year">AW24</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_2.png" alt="Look 1">
+
+        </div>
+    </div>
+
+    <div class="collection architectonics">
+        <div class="collection-header">
+            <span class="collection-name">ARCHITECTONICS</span>
+            <span class="collection-year">AW23</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_3.png" alt="Look 1">
+
+        </div>
+    </div>
+
+    <div class="collection carte-blanche">
+        <div class="collection-header">
+            <span class="collection-name">CARTE BLANCHE</span>
+            <span class="collection-year">SS23</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_4.png" alt="Look 1">
+            
+        </div>
+    </div>
+
+    <div class="collection meta-morphism">
+        <div class="collection-header">
+            <span class="collection-name">META MORPHISM</span>
+            <span class="collection-year">AW22</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_5.png" alt="Look 1">
+       
+        </div>
+    </div>
+
+    <div class="collection earthrise">
+        <div class="collection-header">
+            <span class="collection-name">EARTHRISE</span>
+            <span class="collection-year">AW21</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_6.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection roots-of-rebirth">
+        <div class="collection-header">
+            <span class="collection-name">ROOTS OF REBIRTH</span>
+            <span class="collection-year">SS21</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_7.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection sensory-seas">
+        <div class="collection-header">
+            <span class="collection-name">SENSORY SEAS</span>
+            <span class="collection-year">SS20</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_8.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection hypnosis">
+        <div class="collection-header">
+            <span class="collection-name">HYPNOSIS</span>
+            <span class="collection-year">AW19/20</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_9.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection shift-souls">
+        <div class="collection-header">
+            <span class="collection-name">SHIFT SOULS</span>
+            <span class="collection-year">SS10</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_10.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection syntopia">
+        <div class="collection-header">
+            <span class="collection-name">SYNTOPIA</span>
+            <span class="collection-year">AW18/19</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_11.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection ludi-naturale">
+        <div class="collection-header">
+            <span class="collection-name">LUDI NATURALE</span>
+            <span class="collection-year">SS16</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_12.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection aeriform">
+        <div class="collection-header">
+            <span class="collection-name">AERIFORM</span>
+            <span class="collection-year">AW17/18</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_13.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection between-the-lines">
+        <div class="collection-header">
+            <span class="collection-name">BETWEEN THE LINES</span>
+            <span class="collection-year">SS17</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_14.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection seijaku">
+        <div class="collection-header">
+            <span class="collection-name">SEIJAKU</span>
+            <span class="collection-year">AW16/17</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_15.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+    <div class="collection lucid">
+        <div class="collection-header">
+            <span class="collection-name">LUCID</span>
+            <span class="collection-year">SS18</span>
+        </div>
+        <div class="collection-images">
+            <img src="runway_16.png" alt="Look 1">
+          
+        </div>
+    </div>
+
+ 
+ 
+  <a href="one.html" class="title-two-link">
+    <div class="title-one">
+      Philosophy
+    </div>
+  </a>
+    <script>
+        // Get all collection headers
+        const headers = document.querySelectorAll('.collection-header');
+
+        headers.forEach(header => {
+            header.addEventListener('mouseenter', function() {
+                const images = this.nextElementSibling;
+                images.classList.add('visible');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "Spline Sans Mono", monospace;
+    overflow-x: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100vh;
+}
+
+.section {
+    position: relative;
+    padding: 2rem;
+}
+
+.collection-item {
+    position: absolute;
+}
+
+.collection-text {
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.collection-name {
+    font-weight: 400;
+    margin-bottom: 0.25rem;
+}
+
+.collection-code {
+    font-size: 0.65rem;
+    opacity: 0.7;
+}
+
+.image-container {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 100;
+}
+
+.collection-item:hover .image-container {
+    opacity: 1;
+}
+
+.image-container img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+/* Left Section Positioning */
+#sympoiesis-img {
+    top: -2rem;
+    left: -8rem;
+    width: 130px;
+}
+
+#hybrid-img {
+    top: -2rem;
+    left: 8rem;
+    width: 125px;
+}
+
+#architectonics-img {
+    top: -10rem;
+    left: 5rem;
+    width: 5vw;
+}
+
+#carte-img {
+    top: 5rem;
+    left: 14rem;
+    width: 8vw;
+}
+
+#mela-img {
+    top: 0rem;
+    left: 22rem;
+    width: 135px;
+}
+
+#earthrise-img {
+    top: -2rem;
+    left: 28rem;
+    width: 130px;
+}
+
+#roots-img {
+    top: 8rem;
+    left: 28rem;
+    width: 130px;
+}
+
+/* Right Section Positioning */
+#sensory-img {
+    top: -2rem;
+    left: -10rem;
+    width: 135px;
+}
+
+#hypnosis-img {
+    top: -2rem;
+    left: 3rem;
+    width: 135px;
+}
+
+#shift-img {
+    top: 8rem;
+    left: 3rem;
+    width: 125px;
+}
+
+#syntopia-img {
+    top: -3rem;
+    left: 14rem;
+    width: 130px;
+}
+
+#ludi-img {
+    top: 6rem;
+    left: 13rem;
+    width: 135px;
+}
+
+#aeriform-img {
+    top: -2rem;
+    left: 23rem;
+    width: 130px;
+}
+
+#between-img {
+    top: 8rem;
+    left: 23rem;
+    width: 130px;
+}
+
+#seijaku-img {
+    top: -3rem;
+    left: 32rem;
+    width: 125px;
+}
+
+#lucid-img {
+    top: 16rem;
+    left: 32rem;
+    width: 125px;
+}
+
+/* LEFT SECTION - Text Alignment with Consistent Vertical Spacing */
+/* Center horizontal line - SYMPOIESIS, HYBRID SHOW, META MORPHISM */
+.left-section .collection-item:nth-child(1) {
+    top: 50vh;
+    left: 2rem;
+}
+
+.left-section .collection-item:nth-child(2) {
+    top: 50vh;
+    left: 10rem;
+}
+
+.left-section .collection-item:nth-child(5) {
+    top: 50vh;
+    left: 29rem;
+}
+
+/* ARCHITECTONICS and CARTE BLANCHE - aligned column */
+.left-section .collection-item:nth-child(3) {
+    top: calc(50vh - 1.5rem);
+    left: 18.5rem;
+}
+
+.left-section .collection-item:nth-child(4) {
+    top: calc(50vh + 1.5rem);
+    left: 18.5rem;
+}
+
+/* EARTHRISE and ROOTS OF REBIRTH - aligned column */
+.left-section .collection-item:nth-child(6) {
+    top: calc(50vh - 1.5rem);
+    left: 39rem;
+}
+
+.left-section .collection-item:nth-child(7) {
+    top: calc(50vh + 1.5rem);
+    left: 39.3rem;
+}
+
+/* RIGHT SECTION - Text Alignment with Consistent Vertical Spacing */
+/* Center horizontal line - SENSORY SEAS */
+.right-section .collection-item:nth-child(1) {
+    top: 50vh;
+    left: 2rem;
+}
+
+/* HYPNOSIS and SHIFT SOULS - aligned column */
+.right-section .collection-item:nth-child(2) {
+    top: calc(50vh - 1.5rem);
+    left: 11.5rem;
+}
+
+.right-section .collection-item:nth-child(3) {
+    top: calc(50vh + 1.5rem);
+    left: 11rem;
+}
+
+/* SYNTOPIA and LUDI NATURAE - aligned column */
+.right-section .collection-item:nth-child(4) {
+    top: calc(50vh - 1.5rem);
+    left: 20rem;
+}
+
+.right-section .collection-item:nth-child(5) {
+    top: calc(50vh + 1.5rem);
+    left: 19rem;
+}
+
+/* AERIFORM and BETWEEN THE LINES - aligned column */
+.right-section .collection-item:nth-child(6) {
+    top: calc(50vh - 1.5rem);
+    left: 29rem;
+}
+
+.right-section .collection-item:nth-child(7) {
+    top: calc(50vh + 1.5rem);
+    left: 27rem;
+}
+
+/* SEIJAKU and LUCID - aligned column */
+.right-section .collection-item:nth-child(8) {
+    top: calc(50vh - 1.5rem);
+    left: 38.5rem;
+}
+
+.right-section .collection-item:nth-child(9) {
+    top: calc(50vh + 1.5rem);
+    left: 39rem;
+}
+.left-column .text-item:nth-child(2) {
+    margin-top: 5.47rem;
+    font-weight: bold;
+}
+
+.middle-column .text-item:nth-child(2) {
+    margin-top: 5.47rem;
+}
+
+.middle-column .text-item:nth-child(3) {
+    margin-top: 10.94rem;
+}
+
+.middle-column .text-item:nth-child(4) {
+    margin-top: 7.57rem;
+}
+
+.lower-middle-column .text-item:nth-child(1) {
+    margin-top: 2.04rem;
+}
+
+.lower-middle-column .text-item:nth-child(2) {
+    margin-top: 13.04rem;
+}
+
+.center-column .text-item:nth-child(1) {
+    margin-top: 0.58rem;
+}
+
+.far-right-column .text-item:nth-child(1) {
+    margin-top: 6.04rem;
+}
+
+.right-column .text-item:nth-child(2) {
+    margin-top: 6.04rem;
+}
+
+.content-wrapper {
+    position: relative;
+    height: 106vh;
+    padding-top: 0;
+    font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.left-column {
+    position: absolute;
+    left: 3rem;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+/* Middle column (Dissection) - 4 columns horizontal */
+.middle-column {
+    position: absolute;
+    left: 23.3%;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+}
+
+/* Lower middle column (Carbon Footprint) - 2 columns horizontal */
+.lower-middle-column {
+    position: absolute;
+    left: 42.9%;
+    top: 58.75vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+/* Center column (Material Afterlife) - single item */
+.center-column {
+    position: absolute;
+    left:66.4%;
+    top: 51.5vh;
+    transform: translateX(-50%);
+}
+
+/* Right column (Innovation) - 2 columns horizontal */
+.right-column {
+    position: absolute;
+    right: 4.5%;
+    top: 73vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    margin-bottom: 8rem;
+    position: sticky;
+    top: 4vh;
+    z-index: 10;
+}
+.number {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+    font-weight: 50;
+        opacity: 60%;
+}
+
+.label {
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    font-weight: 50;
+    opacity: 60%;
+    
+}

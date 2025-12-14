@@ -1,0 +1,242 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+body {
+    position: relative;
+}
+
+.text-item {
+    font-size: 0.75rem;
+    margin-bottom: 0; 
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    transition: none;
+    z-index: 99999;
+}
+
+.text-item:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.left-column .text-item:nth-child(2) {
+    margin-top: 5.47rem;
+ 
+}
+.lower-middle-column .text-item:nth-child(1) {
+  font-weight: bold;
+}
+
+.middle-column .text-item:nth-child(2) {
+    margin-top: 5.47rem;
+}
+
+.middle-column .text-item:nth-child(3) {
+    margin-top: 10.94rem;
+}
+
+.middle-column .text-item:nth-child(4) {
+    margin-top: 7.57rem;
+}
+
+.lower-middle-column .text-item:nth-child(1) {
+    margin-top: 2.04rem;
+}
+
+.lower-middle-column .text-item:nth-child(2) {
+    margin-top: 13.04rem;
+}
+
+.center-column .text-item:nth-child(1) {
+    margin-top: 0.58rem;
+}
+
+.far-right-column .text-item:nth-child(1) {
+    margin-top: 6.04rem;
+}
+
+.right-column .text-item:nth-child(2) {
+    margin-top: 6.04rem;
+}
+
+/* FIXED TOP ROW */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    position: fixed;
+    top: 4vh;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.number {
+    font-size: 0.65rem;
+    margin-bottom: 0.3rem;
+    font-weight: 50;
+    opacity: 60%;
+}
+
+.label {
+    font-size: 0.65rem;
+    letter-spacing: 0.05em;
+    font-weight: 50;
+    opacity: 60%;
+}
+
+.content-wrapper {
+    position: relative;
+    min-height: 106vh;
+    padding-top: 0;
+    font-family: "Spline Sans Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.left-column {
+    position: absolute;
+    left: 3rem;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+/* Middle column (Dissection) - 4 columns horizontal */
+.middle-column {
+    position: absolute;
+    left: 23.3%;
+    top: 38.1vh;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+}
+
+/* Lower middle column (Carbon Footprint) - 2 columns horizontal */
+.lower-middle-column {
+    position: absolute;
+    left: 42.9%;
+    top: 58.75vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+/* Center column (Material Afterlife) - single item */
+.center-column {
+    position: absolute;
+    left: 66.4%;
+    top: 51.5vh;
+    transform: translateX(-50%);
+}
+
+/* Right column (Innovation) - 2 columns horizontal */
+.right-column {
+    position: absolute;
+    right: 4.5%;
+    top: 73vh;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+}
+
+/* Image Grid Container */
+.image-grid-container {
+    position: relative;
+    width: 75vw;
+    margin-left: 4vw;
+    margin-top: -10vh;
+    margin-bottom: 4vh;
+    z-index: 20;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1rem;
+    column-gap: 6rem;
+}
+
+.grid-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+    overflow: visible;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Front images - uniform size and centered */
+.grid-item .front-img {
+    width: 43%;
+    height: 30%;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: none;
+}
+
+/* Hover images - hidden by default */
+.grid-item .hover-img {
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+}
+
+/* Hover effect */
+.grid-item:hover .front-img {
+    z-index: 3;
+}
+
+.grid-item:hover .hover-img {
+    opacity: 1;
+}
+
+/* Large decorative background image */
+.image {
+    position: fixed;
+    z-index: 1;
+    top: 5vh;
+    right: -48vw;
+    pointer-events: none;
+}
+
+.image img {
+    height: 117.5vh;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
